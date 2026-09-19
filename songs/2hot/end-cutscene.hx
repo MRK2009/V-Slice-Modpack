@@ -14,7 +14,6 @@ function create() {
 	video = new FlxVideoSprite();
     video.load(Paths.file('songs/' + game.SONG.meta.name + '/end-cutscene.' + Flags.VIDEO_EXT));
 	video.antialiasing = true;
-	video.autoPause = false;
 	video.visible = false;
 	video.cameras = [cutsceneCam];
 	video.bitmap.onEndReached.add(close);
